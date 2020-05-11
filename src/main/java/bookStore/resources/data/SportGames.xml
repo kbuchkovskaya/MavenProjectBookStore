@@ -1,0 +1,14 @@
+<SportGames>
+    <SportGame>
+        <Name>Name1</Name>
+        <TeamsQuantity>2</TeamsQuantity>
+    </SportGame>
+    <SportGame>
+        <Name>Name2</Name>
+        <TeamsQuantity>10</TeamsQuantity>
+    </SportGame>
+    <SportGame>
+        <Name>Name3</Name>
+        <TeamsQuantity>5</TeamsQuantity>
+    </SportGame>
+</SportGames>

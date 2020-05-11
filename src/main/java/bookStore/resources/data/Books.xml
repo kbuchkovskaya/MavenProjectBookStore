@@ -1,0 +1,35 @@
+<Books>
+    <Book>
+        <PaperBook>
+            <Name>Name1</Name>
+            <Author>Author1</Author>
+            <PublicationYear>2000-01-01</PublicationYear>
+            <Price>123</Price>
+            <Genre>SONNET</Genre>
+            <CoverType>SOFT</CoverType>
+            <Size>SMALL</Size>
+        </PaperBook>
+    </Book>
+    <Book>
+        <PaperBook>
+            <Name>Name2</Name>
+            <Author>Author1</Author>
+            <PublicationYear>2000-01-01</PublicationYear>
+            <Price>321</Price>
+            <Genre>COMEDY</Genre>
+            <CoverType>TOUGH</CoverType>
+            <Size>MEDIUM</Size>
+        </PaperBook>
+    </Book>
+    <Book>
+        <PaperBook>
+            <Name>Name3</Name>
+            <Author>Author2</Author>
+            <PublicationYear>2000-01-01</PublicationYear>
+            <Price>389</Price>
+            <Genre>FAIRYTAIL</Genre>
+            <CoverType>TOUGH</CoverType>
+            <Size>LARGE</Size>
+        </PaperBook>
+    </Book>
+</Books>

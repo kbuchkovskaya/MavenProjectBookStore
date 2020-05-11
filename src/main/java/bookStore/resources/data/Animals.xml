@@ -1,0 +1,17 @@
+<Animals>
+    <Animal type="pets">
+        <Name>Name1</Name>
+        <Size>Small</Size>
+        <Colour>Black</Colour>
+    </Animal>
+    <Animal type="wild">
+        <Name>Name2</Name>
+        <Size>Large</Size>
+        <Colour>White</Colour>
+    </Animal>
+    <Animal type="pets">
+        <Name>Name3</Name>
+        <Size>Medium</Size>
+        <Colour>Gray</Colour>
+    </Animal>
+</Animals>

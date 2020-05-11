@@ -1,0 +1,16 @@
+<Games>
+    <Game>
+        <BoardGame>
+            <Name>Name1</Name>
+            <MinPlayersQuntity>12</MinPlayersQuntity>
+            <MaxPlayerQuntity>20</MaxPlayerQuntity>
+        </BoardGame>
+    </Game>
+    <Game>
+        <VideoGame>
+            <Name>Name3</Name>
+            <MinPlayersQuntity>5</MinPlayersQuntity>
+            <MaxPlayerQuntity>10</MaxPlayerQuntity>
+        </VideoGame>
+    </Game>
+</Games>

@@ -1,0 +1,1 @@
+path = C:\\Users\\User\\IdeaProjects\\BookStore\\src\\main\\java\\bookStore\\resources\\MapInfo.txt
