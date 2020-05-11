@@ -3,15 +3,18 @@
         <Name>Name1</Name>
         <Size>Small</Size>
         <Colour>Black</Colour>
+        <Voice>aaa</Voice>
     </Animal>
     <Animal type="wild">
         <Name>Name2</Name>
         <Size>Large</Size>
         <Colour>White</Colour>
+        <Voice>bbb</Voice>
     </Animal>
     <Animal type="pets">
         <Name>Name3</Name>
         <Size>Medium</Size>
         <Colour>Gray</Colour>
+        <Voice>ccc</Voice>
     </Animal>
 </Animals>
