@@ -1,0 +1,30 @@
+<Shops>
+    <Shop>
+        <EShop>
+            <Name>Shop1</Name>
+            <Book>Book1</Book>
+            <Website>Website1</Website>
+        </EShop>
+    </Shop>
+    <Shop>
+        <EShop>
+            <Name>Shop2</Name>
+            <Book>Book2</Book>
+            <Website>Website2</Website>
+        </EShop>
+    </Shop>
+    <Shop>
+        <Store>
+            <Name>Shop3</Name>
+            <Book>Book3</Book>
+            <Address>Address1</Address>
+        </Store>
+    </Shop>
+    <Shop>
+        <Store>
+            <Name>Shop4</Name>
+            <Book>Book4</Book>
+            <Address>Address2</Address>
+        </Store>
+    </Shop>
+</Shops>

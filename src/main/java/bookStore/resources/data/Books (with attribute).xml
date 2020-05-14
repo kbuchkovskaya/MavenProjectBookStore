@@ -1,0 +1,23 @@
+<Books>
+    <Book type="Paper Book">
+        <Name>Name1</Name>
+        <Author>Author1</Author>
+        <PublicationYear>2000-01-01</PublicationYear>
+        <Price>123</Price>
+        <Genre>SONNET</Genre>
+    </Book>
+    <Book type="E-book">
+        <Name>Name1</Name>
+        <Author>Author1</Author>
+        <PublicationYear>2000-01-01</PublicationYear>
+        <Price>333</Price>
+        <Genre>NOVEL</Genre>
+    </Book>
+    <Book type="Audio book">
+        <Name>Name2</Name>
+        <Author>Author1</Author>
+        <PublicationYear>2000-01-01</PublicationYear>
+        <Price>332</Price>
+        <Genre>TRAGEDY</Genre>
+    </Book>
+</Books>

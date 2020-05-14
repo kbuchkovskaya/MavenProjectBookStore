@@ -1,0 +1,8 @@
+{
+  "name":"bookName1",
+  "author":"author1",
+  "price":32.0,
+  "genre":"SONNET",
+  "cover":"SOFT",
+  "size":"SMALL"
+}

@@ -1,0 +1,23 @@
+INFO  PaperBookMenu:29 - Book is successfully added to map!
+INFO  EBookMenu:30 - Book is successfully added to map!
+INFO  MainMenu:54 - Info message: Nothing selected!
+INFO  MainMenu:105 - File is opened!
+INFO  MainMenu:108 - File is closed!
+INFO  MainMenu:110 - Last changes time is added to Date.txt!
+INFO  MainMenu:113 - JSON: {"n1":"Paper book","n2":"E-book"}
+INFO  MainMenu:116 - Book name POJO: n123
+INFO  PaperBookMenu:27 - Book is successfully added to map!
+INFO  MainMenu:58 - Info message: Nothing selected!
+INFO  MainMenu:109 - File is opened!
+INFO  MainMenu:112 - File is closed!
+INFO  MainMenu:114 - Last changes time is added to Date.txt!
+INFO  MainMenu:117 - JSON: {"n":"Paper book"}
+INFO  MainMenu:120 - Book name POJO: n123
+INFO  MainMenu:140 - Project exit 
+INFO  PaperBookMenu:27 - Book is successfully added to map!
+INFO  MainMenu:58 - Info message: Nothing selected!
+INFO  MainMenu:109 - File is opened!
+INFO  MainMenu:112 - File is closed!
+INFO  MainMenu:114 - Last changes time is added to Date.txt!
+INFO  MainMenu:117 - JSON: {"n":"Paper book"}
+INFO  MainMenu:120 - Book name POJO: n123

@@ -1,0 +1,35 @@
+<Books>
+    <Book>
+        <AudioBook>
+            <Name>Name1</Name>
+            <Author>Author1</Author>
+            <PublicationYear>2000-01-01</PublicationYear>
+            <Price>322</Price>
+            <Genre>NOVEL</Genre>
+            <Memory>11</Memory>
+            <BookLanguage>WebSite2</BookLanguage>
+        </AudioBook>
+    </Book>
+    <Book>
+        <AudioBook>
+            <Name>Name2</Name>
+            <Author>Author1</Author>
+            <PublicationYear>2000-01-01</PublicationYear>
+            <Price>332</Price>
+            <Genre>TRAGEDY</Genre>
+            <Memory>33</Memory>
+            <BookLanguage>WebSite2</BookLanguage>
+        </AudioBook>
+    </Book>
+    <Book>
+        <AudioBook>
+            <Name>Name3</Name>
+            <Author>Author1</Author>
+            <PublicationYear>2000-01-01</PublicationYear>
+            <Price>326</Price>
+            <Genre>FAIRYTAIL</Genre>
+            <Memory>383</Memory>
+            <BookLanguage>WebSite3</BookLanguage>
+        </AudioBook>
+    </Book>
+</Books>

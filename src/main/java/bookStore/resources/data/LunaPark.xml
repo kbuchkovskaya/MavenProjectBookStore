@@ -1,0 +1,22 @@
+<LunaPark>
+    <Attractions>
+        <Attraction>
+            <Name>Name1</Name>
+            <YearFrom>2</YearFrom>
+            <YearTo>5</YearTo>
+            <HightFrom>123</HightFrom>
+        </Attraction>
+        <Attraction>
+            <Name>Name2</Name>
+            <YearFrom>10</YearFrom>
+            <YearTo>15</YearTo>
+            <HightFrom>150</HightFrom>
+        </Attraction>
+        <Attraction>
+            <Name>Name1</Name>
+            <YearFrom>18</YearFrom>
+            <YearTo>50</YearTo>
+            <HightFrom>160</HightFrom>
+        </Attraction>
+    </Attractions>
+</LunaPark>
