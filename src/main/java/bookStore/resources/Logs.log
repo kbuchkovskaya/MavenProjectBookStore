@@ -1,0 +1,10 @@
+INFO  PaperBookMenu:27 - Book is successfully added to map!
+INFO  MainMenu:58 - Info message: Nothing selected!
+INFO  RWFromProperties:50 - C:\Users\User\IdeaProjects\BookStore-MavenProject\src\main\java\bookStore\resources\PathToFile.txt (Не удается найти указанный файл)
+INFO  MainMenu:109 - File is opened!
+INFO  MainMenu:112 - File is closed!
+INFO  MainMenu:114 - Last changes time is added to Date.txt!
+INFO  MainMenu:117 - JSON: {"b":"Paper book"}
+INFO  MainMenu:120 - Book name POJO: n123
+ERROR JsonParser:62 - File error: C:\Users\User\IdeaProjects\BookStore-MavenProject\src\main\java\bookstore\resources\FileToJava.json
+ERROR JsonParser:74 - Error: C:\Users\User\IdeaProjects\BookStore-MavenProject\src\main\java\bookstore\resources\JsonToList.json
