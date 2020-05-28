@@ -10,15 +10,13 @@ public abstract class Shop implements Payment {
     protected String name;
     protected Book book;
 
-    public Shop(String name, java.awt.print.Book book) {
+    protected Shop() {
+
     }
 
     public Shop(String name, Book book) {
         this.name = name;
         this.book = book;
-    }
-
-    protected Shop() {
     }
 
     public String getName() {

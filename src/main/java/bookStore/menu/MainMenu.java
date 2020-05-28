@@ -11,6 +11,7 @@ import bookStore.utils.json.JsonParser;
 import bookStore.utils.json.JsonPath;
 import org.apache.log4j.Logger;
 
+import java.sql.SQLException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -23,6 +24,9 @@ public class MainMenu {
     PaperBookMenu paperBookMenu = new PaperBookMenu();
     EBookMenu eBookMenu = new EBookMenu();
     AudioBookMenu audioBookMenu = new AudioBookMenu();
+
+    StoreMenu storeMenu = new StoreMenu();
+    EShopMenu eShopMenu = new EShopMenu();
 
     Storage storage = new Storage();
 
@@ -122,7 +126,48 @@ public class MainMenu {
         jsonParser.convertJsonFileToList(JsonPath.PATH_JSON_FILE_TO_LIST);
     }
 
-    public void menu() {
+    public void addShop(){
+        System.out.println("Which shop do you want to add: 1 - EShop; 2 - Store; 3 - Exit: ");
+        int choiseShop = scanner.nextInt();
+        do {
+            switch (choiseShop){
+                case 1:
+                    eShopMenu.addEShop();
+                    break;
+                case 2:
+                    storeMenu.addStore();
+                    break;
+                default:
+                    break;
+            }
+            System.out.println("Which shop do you want to add: 1 - EShop; 2 - Store; 3 - Exit: ");
+            choiseShop = scanner.nextInt();
+        }
+        while (choiseShop == 1 || choiseShop == 2);
+    }
+
+    public void shopMenu(){
+        System.out.println("What do you wand to do? 1 - Add shop; 2 - Delete shop; 3 - Shops list; 4 - Exit: ");
+        int choise = scanner.nextInt();
+        do {
+            switch (choise){
+                case 1:
+                    addShop();
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    storeMenu.listOfStore();
+                    break;
+                default:
+                    break;
+            }
+            System.out.println("What do you wand to do? 1 - Add shop; 2 - Delete shop; 3 - Shops list; 4 - Exit: ");
+            choise = scanner.nextInt();
+        } while (choise == 1 || choise == 2);
+    }
+
+    public void bookMenu() {
         System.out.println("What do you wand to do? 1 - Add book; 2- Delete book; 3 - Books list; 4 - Exit: ");
         int choise = scanner.nextInt();
         do {
@@ -137,14 +182,34 @@ public class MainMenu {
                     booksInfo();
                     break;
                 case 4:
-                    LOGGER.info("Project exit ");
-                    System.exit(0);
+                    break;
                 default:
                     break;
             }
             System.out.println("What do you wand to do? 1 - Add book; 2- Delete book; 3 - Books list; 4 - Exit: ");
             choise = scanner.nextInt();
         } while (choise == 1 || choise == 2 || choise == 3);
+    }
+
+    public void menu(){
+        System.out.println("Work with: 1 - Shops; 2 - Books; 3 - Exit:");
+        int choise = scanner.nextInt();
+        do {
+            switch (choise){
+                case 1:
+                    shopMenu();
+                    break;
+                case 2:
+                    bookMenu();
+                case 3:
+                    LOGGER.info("Project exit ");
+                    System.exit(0);
+                default:
+                    break;
+            }
+            System.out.println("Work with: 1 - Shops; 2 - Books; 3 - Exit:");
+            choise = scanner.nextInt();
+        } while (choise == 1 || choise == 2);
     }
 
 }

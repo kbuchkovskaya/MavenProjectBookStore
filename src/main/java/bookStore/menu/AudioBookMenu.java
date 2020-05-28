@@ -14,7 +14,6 @@ public class AudioBookMenu {
 
     private final static Logger LOGGER = Logger.getLogger(AudioBookMenu.class);
 
-
     private static String bookIsAdded = "Book is successfully added to map!";
 
     private static final String AUDIO_BOOK_TYPE = "Audio book";

@@ -2,6 +2,7 @@ package bookStore.menu;
 
 import bookStore.book.*;
 
+import bookStore.db.Connector;
 import org.apache.log4j.Logger;
 
 
@@ -13,6 +14,8 @@ public class PaperBookMenu {
     private final static Logger LOGGER = Logger.getLogger(PaperBookMenu.class);
 
     public static final String PAPER_BOOK_TYPE = "Paper book";
+
+    Connector connector = new Connector();
 
     Scanner scanner = new Scanner(System.in);
 
@@ -52,6 +55,9 @@ public class PaperBookMenu {
 
         storage.addPaperBookInfo(paperBook);
         Storage.increaseBookQuantity();
+
+        connector.connector();
+        connector.addPaperBookToStore(paperBook);
 
     }
 

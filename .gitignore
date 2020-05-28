@@ -1,4 +1,4 @@
-target
-.idea
-*.iml
-loggi
+/.idea
+/loggi
+/terget
+/BookStore.iml
