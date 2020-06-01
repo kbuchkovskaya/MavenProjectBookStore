@@ -1,17 +1,12 @@
 package bookStore.menu;
 
-import bookStore.book.PaperBook;
 import bookStore.book.Storage;
-import bookStore.exeption.EmptyListExeption;
 import bookStore.exeption.MenuExeption;
 import bookStore.utils.file.RWFromFile;
 import bookStore.utils.file.RWFromProperties;
-import bookStore.utils.json.JsonExample;
 import bookStore.utils.json.JsonParser;
-import bookStore.utils.json.JsonPath;
 import org.apache.log4j.Logger;
 
-import java.sql.SQLException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -97,7 +92,9 @@ public class MainMenu {
 
     public void booksInfo() {
 
-        try {
+        //IPaperBookMapper IPaperBookMapper =  new PaperBook();
+
+/*        try {
             if (!storage.getBookMap().isEmpty()){
                 System.out.println("List: ");
                 storage.printBookMapInfo();
@@ -106,9 +103,9 @@ public class MainMenu {
             } else throw new EmptyListExeption();
         } catch (EmptyListExeption e){
             LOGGER.info("Info message: " + e.getMessage());
-        }
+        }*/
 
-        System.out.println("Reading from file: ");
+/*        System.out.println("Reading from file: ");
         String path = rwFromProperties.getPath();
         LOGGER.info("File is opened!");
         rwFromFile.writingToFile(path, storage.getBookMap());
@@ -123,7 +120,7 @@ public class MainMenu {
         PaperBook paperBook = jsonParser.convertJsonStrToPaperBookPOJO(JsonExample.JSON_EXAMPLE);
         LOGGER.info("Book name POJO: " + paperBook.getName());
         jsonParser.convertJsonFileToJava(JsonPath.PATH_JSON_FILE_TO_JAVA);
-        jsonParser.convertJsonFileToList(JsonPath.PATH_JSON_FILE_TO_LIST);
+        jsonParser.convertJsonFileToList(JsonPath.PATH_JSON_FILE_TO_LIST);*/
     }
 
     public void addShop(){

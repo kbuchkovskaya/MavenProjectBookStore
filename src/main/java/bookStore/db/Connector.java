@@ -3,6 +3,7 @@ package bookStore.db;
 import bookStore.book.PaperBook;
 import bookStore.shop.EShop;
 import bookStore.shop.Store;
+import bookStore.utils.database.ValuesForDatabase;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -15,21 +16,28 @@ public class Connector {
 
     Scanner scanner = new Scanner(System.in);
 
+    ValuesForDatabase valuesForDatabase = new ValuesForDatabase();
+
     public Connection connector(){
 
         Connection connection = null;
 
         try {
-            String url = "jdbc:postgresql://127.0.0.1:5432/postgres";
-            Properties properties = new Properties();
-            properties.setProperty("user", "postgres");
-            properties.setProperty("password", "111111");
-            //properties.setProperty("ssl", "true");
-            connection = DriverManager.getConnection(url, properties);
-        } catch (SQLException e){
-            LOGGER.error(e.getMessage());
+            Class.forName(valuesForDatabase.getDatabaseProperties("db.driver"));
+
+            connection = DriverManager.getConnection(
+                    valuesForDatabase.getDatabaseProperties("db.url"),
+                    valuesForDatabase.getDatabaseProperties("db.username"),
+                    valuesForDatabase.getDatabaseProperties("db.password")
+            );
+
+            LOGGER.info("Connected OK!");
+
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
         }
-    return connection;
+
+        return connection;
     }
 
     public void selectFromPaperBook(){

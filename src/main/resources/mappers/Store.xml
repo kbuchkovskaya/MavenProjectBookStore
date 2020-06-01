@@ -1,0 +1,23 @@
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bookStore.dao.StoreMapper">
+
+    <resultMap id="store" type="bookStore.dao.models.Store">
+        <id property="id" column="id"/>
+        <result property="shopName" column="shopname"/>
+        <result property="address" column="address"/>
+        <collection property="paperbook" ofType="bookStore.dao.models.PaperBook" javaType="PaperBook">
+            <id property="id" column="id"/>
+            <result property="name" column="name"/>
+            <result property="author" column="author"/>
+        </collection>
+    </resultMap>
+
+    <select id="getAllStores" resultMap="store">
+        SELECT * FROM store
+    </select>
+    
+    <select id="getStoresWithPaperBook" resultMap="store">
+        SELECT store.id, store.shopname, store.address, paperbook.name, paperbook.author FROM store
+        INNER JOIN paperbook ON store.id = paperbook.storeid
+    </select>
+</mapper>

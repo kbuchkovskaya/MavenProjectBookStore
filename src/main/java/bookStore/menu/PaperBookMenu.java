@@ -57,7 +57,7 @@ public class PaperBookMenu {
         Storage.increaseBookQuantity();
 
         connector.connector();
-        connector.addPaperBookToStore(paperBook);
+        //connector.addPaperBookToStore(paperBook);
 
     }
 

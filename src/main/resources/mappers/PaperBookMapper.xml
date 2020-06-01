@@ -1,0 +1,26 @@
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bookStore.dao.PaperBookMapper">
+
+    <resultMap id="paperbook" type="bookStore.dao.models.PaperBook">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="author" column="author"/>
+        <result property="price" column="price"/>
+        <result property="publicationYear" column="publicationyear"/>
+        <result property="genre" column="genre"/>
+        <result property="coverType" column="covertype"/>
+        <result property="size" column="size"/>
+    </resultMap>
+
+    <select id="getPaperBooks" resultMap="paperbook">
+        SELECT * FROM paperbook
+    </select>
+
+    <select id="getPaperBookById" parameterType="java.lang.Integer" resultMap="paperbook">
+        SELECT * FROM paperbook WHERE id = #{id}
+    </select>
+
+    <delete id="deletePaperBookById" parameterType="bookStore.dao.models.PaperBook">
+        DELETE FROM paperbook WHERE id = #{id}
+    </delete>
+</mapper>
