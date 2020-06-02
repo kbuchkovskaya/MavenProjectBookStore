@@ -4,10 +4,9 @@ import bookStore.book.CoverType;
 import bookStore.book.Genre;
 import bookStore.book.Size;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 
-public class PaperBook implements Serializable {
+public class PaperBook {
 
     private Integer id;
     private String name;

@@ -1,9 +1,6 @@
 package bookStore.dao.models;
 
-import java.io.Serializable;
-import java.util.List;
-
-public class Store implements Serializable {
+public class Store {
 
     private Integer id;
     private String shopName;
